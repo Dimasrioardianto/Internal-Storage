@@ -7,6 +7,7 @@ import id.ac.polbeng.ardianto.internalstorageexample.databinding.ActivitySecondB
 class SecondActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivitySecondBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
@@ -19,6 +20,7 @@ class SecondActivity : AppCompatActivity() {
         super.onResume()
         loadData()
     }
+
     private fun loadData() {
         Thread {
             val input = openFileInput(MainActivity.FILE_NAME)
